@@ -8,5 +8,6 @@ RUN mvn clean package -DskipTests
 
 EXPOSE 8080
 
+COPY target/HostelManagementSystem.war app.war
 
-CMD ["java","-jar","target/*.jar"]
+CMD ["java","-jar","app.war"]
